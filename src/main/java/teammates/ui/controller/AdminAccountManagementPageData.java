@@ -53,4 +53,20 @@ public class AdminAccountManagementPageData extends PageData {
         }
         return isTestingAccount;
     }
+    
+    /**
+     * Return the actual instructor count i.e excluding testing accounts
+     * 
+     * @return Actual Instructor Count
+     */
+    public int getActualInstructorCount() {
+        int cnt = 0;
+        for (AccountAttributes acc : instructorAccountsTable.values()) {
+            if (isTestingAccount(acc) && isToShowAll == false) {
+                continue;
+            }
+            cnt++;
+        }
+        return cnt;
+    }
 }
