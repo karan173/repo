@@ -3,7 +3,6 @@
 }
 
 #instructorCount {
-    width: 900px;
     font-style: italic;
-    margin: 0 auto;
+    float: right;  
 }

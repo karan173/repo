@@ -29,6 +29,8 @@
               <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
               <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
               <![endif]-->
+    <link rel="stylesheet" href="/stylesheets/adminAccountManagement.css"
+    type="text/css">
     <script type="text/javascript" src="/js/googleAnalytics.js"></script>
     <script type="text/javascript" src="/js/jquery-minified.js"></script>
     <script type="text/javascript" src="/js/common.js"></script>
@@ -50,7 +52,7 @@
         role="main">
         <div id="topOfPage"></div>
         <div id="headerOperation" class="page-header">
-            <h1>Instructor Account Management<small id="instructorCount">Total Instructors: <%=data.instructorAccountsTable.size()%></small>
+            <h1>Instructor Account Management<span id="instructorCount"><small>Total Instructors: <%=data.instructorAccountsTable.size()%></small></span>
             </h1>
             <jsp:include page="<%=Const.ViewURIs.STATUS_MESSAGE%>" />
         </div>
